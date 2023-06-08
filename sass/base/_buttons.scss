@@ -1,0 +1,117 @@
+.button {
+  background: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}
+
+.subscribe-button {
+  @extend .button;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  & span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    padding-left: 43px;
+    margin: 0;
+    padding-right: 28px;
+    justify-content: space-between;
+  }
+}
+
+.hero-section__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--blue);
+  height: 50px;
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Portfolio Button Section */
+
+.products-section {
+  padding: 92px 0 50px 0;
+  margin: auto;
+  width: 1200px;
+
+  &__list {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+  &__button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 22px;
+    margin: 0;
+    height: 38px;
+    border-style: none;
+    font-style: normal;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      cursor: pointer;
+      background-color: var(--blue);
+      color: var(--white);
+    }
+    &--dimension {
+      width: 120px;
+    }
+    &--active {
+      background-color: var(--blue);
+      color: var(--white);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.work-container {
+  width: 1200px;
+  margin: auto;
+  &__items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    gap: 30px;
+    z-index: 1;
+    padding-inline-start: 0;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+  z-index: 2;
+  transform: translate(0, -105%);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}

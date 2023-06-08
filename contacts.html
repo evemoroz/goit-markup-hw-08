@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="style">
+      <div class="container header-text header">
+        <a href="index.html" class="header-logo"
+          ><span class="web">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="header-text links">
+            <li>
+              <a href="index.html" class="active">Studio</a>
+            </li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header-address">
+          <li>
+            <a class="header-contacts" href="mailto:info@devstudio.com"
+              ><svg height="16px" width="16px">
+                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-contacts"
+              href="tel:+12127724150"
+              class="phone-header"
+              ><svg height="16px" width="16px">
+                <use href="./images/symbol-defs.svg#icon-Vector"></use></svg
+              >+1 212-772-4150</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="contacts">
+          <a href="index.html"><span class="web">Web</span>Studio</a>
+          <address class="address">
+            <p class="address__street">695 Park Ave, NY 10065, USA</p>
+            <a href="mailto:info@devstudio.com" class="address__mail"
+              >info@devstudio.com</a
+            ><br />
+            <a href="tel:+12127724150" class="address__phone"
+              >+1 212-772-4150</a
+            >
+          </address>
+        </div>
+        <div class="social-section">
+          <div>
+            <p class="footer-text">FIND US ON</p>
+            <div class="icons-list">
+              <a href="http://instagram.com" target="_blank">
+                <svg>
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="http://twitter.com" target="_blank">
+                <svg>
+                  <use xlink:href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="http://facebook.com" target="_blank">
+                <svg>
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg> </a
+              ><a href="http://linkedin.com" target="_blank">
+                <svg>
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-text">Subscribe to the newsletter</p>
+            <form
+              class="subscribe-form"
+              name="subscribe_form"
+              autocomplete="on"
+              novalidate
+            >
+              <label for=""
+                ><input
+                  class="subscribe-email"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+              /></label>
+              <button class="subscribe-button" type="submit">
+                <span
+                  >Subscribe
+                  <svg width="24px" height="24px">
+                    <use xlink:href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

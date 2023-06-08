@@ -1,0 +1,24 @@
+body {
+  font-family: var(--roboto-font-family), var(--raleway-font-family), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #757575;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a:hover,
+a:focus {
+  color: var(--blue);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  outline: none;
+}

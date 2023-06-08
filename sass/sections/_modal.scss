@@ -1,0 +1,207 @@
+/* Modal */
+
+.modal {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  transition: transform;
+  transform: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  margin: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 528px;
+  height: 581px;
+  justify-content: center;
+
+  &__title {
+    padding-top: 40px;
+    margin-bottom: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+
+  &__button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    top: 8px;
+    right: 8px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--white);
+      color: var(--blue);
+      cursor: pointer;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+    }
+  }
+}
+
+.is-hidden .modal {
+  transform: scale(0);
+  opacity: 0;
+}
+
+textarea {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 416px;
+  height: 96px;
+  resize: none;
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    color: #212121;
+  }
+
+  &:hover {
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
+}
+
+.modal__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  padding-left: 40px;
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+  }
+
+  &:focus-visible + svg {
+    color: var(--blue);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
+
+  &:hover + svg {
+    color: var(--blue);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
+}
+
+.modal__label {
+  position: relative;
+  display: grid;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 10px;
+  gap: 4px;
+}
+
+.modal__label svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  color: #212121;
+  top: 50%;
+  left: 12px;
+}
+
+/* Submit button */
+
+.modal--submit {
+  justify-content: center;
+  display: flex;
+  margin-top: 25px;
+  &__button {
+    @extend .button;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+/* Terms & Condition */
+.agree-check .checkmark {
+  appearance: none;
+}
+
+.agree-check {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  margin-top: 15px;
+  &__icon {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--white);
+  }
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
+  & > span > a {
+    color: var(--blue);
+  }
+}
+
+.checkmark:checked + .agree-check__icon {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  fill: var(--white);
+  outline: none;
+  stroke: var(--white);
+  stroke-width: 0.2;
+  color: var(--blue);
+}

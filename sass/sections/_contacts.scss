@@ -1,0 +1,81 @@
+.subscribe-form {
+  display: flex;
+  gap: 12px;
+}
+
+.email-box:focus-visible {
+  outline: none;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-left: 10px;
+  & p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--white);
+  }
+  & > a {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    text-decoration: none;
+  }
+  & a:hover {
+    color: var(--white);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+}
+
+.mail-footer.phone-footer:hover,
+.mail-footer.phone-footer:focus {
+  color: var(--blue);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+  & a:focus,
+  & > a:hover {
+    color: var(--blue);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+  &__mail,
+  &__phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    height: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  &__street {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}

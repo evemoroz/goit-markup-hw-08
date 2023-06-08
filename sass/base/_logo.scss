@@ -1,0 +1,22 @@
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: black;
+  text-decoration: none;
+  & span {
+    color: var(--blue);
+  }
+  &:hover,
+  &:focus {
+    color: currentColor;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
+}
+
+.web {
+  color: var(--blue);
+}

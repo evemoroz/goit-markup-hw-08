@@ -1,0 +1,30 @@
+.customers-container {
+  margin: auto;
+  padding: 94px 0 94px 0;
+}
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+  padding-inline-start: 0;
+  justify-content: center;
+  margin: 50px 0 0 0;
+  &__details {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    color: #afb1b8;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    justify-content: center;
+    &:hover {
+      color: var(--blue);
+      border-radius: 4px solid #afb1b8;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+    }
+  }
+  & svg {
+    width: 65%;
+  }
+}
