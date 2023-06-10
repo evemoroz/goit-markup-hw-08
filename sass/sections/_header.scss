@@ -83,52 +83,40 @@ a.active {
     height: 60px;
     justify-content: space-between;
   }
-  .test {
-    position: relative;
-  }
-  .menu-modal {
+  .header-text__nav {
     display: none;
     &.is-open {
-      position: absolute;
       display: flex;
       flex-direction: column;
-      width: 480px;
+      max-width: 100%;
+      max-height: 100%;
       background-color: white;
       position: fixed;
-
+      top: 0px;
+      left: 0;
       .header-text__menu {
         display: flex;
         flex-direction: column;
         gap: 32px;
-        &__menu-item {
-          display: flex;
-          color: #212121;
-          font-family: "Roboto";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 40px;
-          line-height: 47px;
-          letter-spacing: 0.02em;
-        }
-      }
-
-      & + .menu-toggle {
-        display: none;
-      }
-
-      .button--close-menu {
-        display: inline-flex;
       }
     }
   }
-
-  .header-text__menu {
-    max-width: 100%;
+  .header-text__menu-item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
   }
 }
 
 @media screen and (min-width: 481px) {
   .toggle-button {
+    display: none;
+  }
+  .menu-button {
     display: none;
   }
 }

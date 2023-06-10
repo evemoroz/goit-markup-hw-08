@@ -117,7 +117,7 @@
   }
 }
 
-/* Menu */
+/* Menu modal */
 .toggle-button {
   padding: 0;
   border-radius: 4px;
@@ -129,10 +129,33 @@
   letter-spacing: 0.06em;
   border: none;
   background-color: var(--white);
+  display: flex;
+  align-items: center;
   &:hover,
   &:focus {
     background: var(--white);
     color: var(--blue);
     cursor: pointer;
   }
+}
+
+.button-menu {
+  color: #212121;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  background: white;
+  border: none;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
