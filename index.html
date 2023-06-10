@@ -28,31 +28,46 @@
               <li><a href="contacts.html">Contacts</a></li>
             </ul>
           </nav>
-          <ul class="header-address">
-            <li>
-              <a class="header-contacts" href="mailto:info@devstudio.com"
-                ><svg height="16px" width="16px">
-                  <use
-                    href="./images/symbol-defs.svg#icon-envelope-hover"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="header-contacts"
-                href="tel:+12127724150"
-                class="phone-header"
-                ><svg height="16px" width="16px">
-                  <use href="./images/symbol-defs.svg#icon-Vector"></use></svg
-                >+1 212-772-4150</a
-              >
-            </li>
-          </ul>
-          <svg width="40px" height="40px" class="icon-menu">
-            <use href="./images/symbol-defs.svg#icon-menu"></use>
-          </svg>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <ul class="header-address">
+              <li>
+                <a class="header-contacts" href="mailto:info@devstudio.com"
+                  ><svg height="16px" width="16px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-envelope-hover"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-contacts"
+                  href="tel:+12127724150"
+                  class="phone-header"
+                  ><svg height="16px" width="16px">
+                    <use href="./images/symbol-defs.svg#icon-Vector"></use></svg
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+            <button
+              class="menu-toggle js-open-menu icon-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="40px" height="40px">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <ul class="header-text links">
+              <li>
+                <a href="index.html" class="active">Studio</a>
+              </li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </div>
         </div>
       </header>
       <!-- Main section -->

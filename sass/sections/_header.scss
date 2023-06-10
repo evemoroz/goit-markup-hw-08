@@ -72,9 +72,6 @@ a.active {
   color: #757575;
 }
 
-.icon-menu {
-  display: none;
-}
 @media screen and (max-width: 480px) {
   .header-text.links,
   .header-address {
@@ -85,13 +82,5 @@ a.active {
     max-width: 100%;
     height: 60px;
     justify-content: space-between;
-  }
-  .icon-menu {
-    display: block;
-    cursor: pointer;
-    margin-right: 15px;
-  }
-  .header-logo {
-    margin-left: 15px;
   }
 }
