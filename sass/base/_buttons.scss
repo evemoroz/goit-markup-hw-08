@@ -139,7 +139,7 @@
   }
 }
 
-.button-menu {
+.button-close-menu {
   color: #212121;
   font-family: "Roboto";
   font-style: normal;
@@ -158,4 +158,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+
+    cursor: pointer;
+  }
 }

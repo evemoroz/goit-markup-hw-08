@@ -18,35 +18,56 @@
         <a href="index.html" class="header-logo"
           ><span class="web">Web</span>Studio</a
         >
-        <nav>
-          <ul class="header-text links">
-            <li>
-              <a href="index.html" class="active">Studio</a>
+
+        <nav class="header-text__nav js-menu-container">
+          <button class="button-menu js-close-menu">
+            <svg width="15px" height="15px">
+              <use href="./images/symbol-defs.svg#icon-modal-vector"></use>
+            </svg>
+          </button>
+          <ul class="header-text__menu links">
+            <li class="header-text__menu-item">
+              <a href="index.html">Studio</a>
             </li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li class="header-text__menu-item">
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-text__menu-item">
+              <a href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="header-address">
+            <li class="header-contacts">
+              <a class="header-contacts__mail" href="mailto:info@devstudio.com"
+                ><svg height="16px" width="16px">
+                  <use
+                    href="./images/symbol-defs.svg#icon-envelope-hover"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
+
+              <a
+                class="header-contacts tel"
+                href="tel:+12127724150"
+                class="phone-header"
+                ><svg height="16px" width="16px">
+                  <use href="./images/symbol-defs.svg#icon-Vector"></use></svg
+                >+1 212-772-4150</a
+              >
+            </li>
           </ul>
         </nav>
-        <ul class="header-address">
-          <li>
-            <a class="header-contacts" href="mailto:info@devstudio.com"
-              ><svg height="16px" width="16px">
-                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a
-              class="header-contacts"
-              href="tel:+12127724150"
-              class="phone-header"
-              ><svg height="16px" width="16px">
-                <use href="./images/symbol-defs.svg#icon-Vector"></use></svg
-              >+1 212-772-4150</a
-            >
-          </li>
-        </ul>
+        <button
+          class="menu-toggle js-open-menu toggle-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main Section -->

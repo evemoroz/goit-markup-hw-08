@@ -22,19 +22,24 @@ a.active {
   margin: auto;
 }
 
-.header-text__menu {
-  display: flex;
-  margin: 0;
-  padding: 0;
+.header-text {
+  &__menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  &__nav {
+    display: flex;
+  }
 }
 
-.header-text__menu.links {
+.header-text__menu {
   gap: 50px;
   margin-left: 93px;
   margin-right: 330px;
 }
 
-.links a {
+.header-text__menu a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -42,7 +47,8 @@ a.active {
   text-decoration: none;
   color: #212121;
   &:hover,
-  &a:focus {
+  &:focus,
+  &.active {
     border-bottom: 4px solid var(--blue);
     padding-bottom: 28px;
     border-radius: 2px;
@@ -55,22 +61,29 @@ a.active {
 
 .header-address {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   gap: 40px;
   margin: 0;
   padding-inline-start: 0;
 }
 .header-contacts {
-  gap: 10px;
   display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #757575;
+  gap: 40px;
+  a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    &:hover {
+      color: #2196f3;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -83,32 +96,99 @@ a.active {
     height: 60px;
     justify-content: space-between;
   }
-  .header-text__nav {
-    display: none;
-    &.is-open {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-      max-height: 100%;
-      background-color: white;
-      position: fixed;
-      top: 0px;
-      left: 0;
-      .header-text__menu {
+  .header-text {
+    gap: 32px;
+    &__nav {
+      display: none;
+      &.is-open {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        width: 480px;
+        height: 796px;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0;
+
+        .header-text__menu {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+        }
+        .header-address {
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 306px;
+        }
+        .header-contacts {
+          justify-content: flex-start;
+          & svg {
+            display: none;
+          }
+          &__mail {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #757575;
+            &:hover {
+              color: #2196f3;
+            }
+          }
+          &__tel {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: #2196f3;
+          }
+        }
+        .header-social {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 48px;
+          margin-top: 64px;
+          &__items a {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: #2196f3;
+            text-decoration: none;
+            & span {
+              padding-left: 10px;
+            }
+          }
+        }
       }
     }
   }
-  .header-text__menu-item {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    letter-spacing: 0.02em;
-    color: #2196f3;
+  .header-text__menu {
+    margin-top: 48px;
+    gap: 32px;
+    a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: #212121;
+      border-bottom: none;
+      padding: 0;
+      &.active,
+      &:hover,
+      &:focus {
+        border-bottom: none;
+        padding: 0;
+      }
+    }
   }
 }
 
@@ -116,7 +196,7 @@ a.active {
   .toggle-button {
     display: none;
   }
-  .menu-button {
+  .button-close-menu {
     display: none;
   }
 }
