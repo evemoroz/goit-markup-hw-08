@@ -25,18 +25,12 @@ a.active {
 .header-text {
   &__menu {
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 50px;
+    padding: 93px;
   }
   &__nav {
     display: flex;
   }
-}
-
-.header-text__menu {
-  gap: 50px;
-  margin-left: 93px;
-  margin-right: 330px;
 }
 
 .header-text__menu a {
@@ -64,7 +58,7 @@ a.active {
   justify-content: end;
   align-items: center;
   gap: 40px;
-  margin: 0;
+  margin-left: 250px;
   padding-inline-start: 0;
 }
 .header-contacts {
@@ -90,12 +84,13 @@ a.active {
   .detail-section {
     max-width: 100%;
     max-height: 100%;
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
   }
-  .detail-section > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+
   .work-container__items,
   .image-items {
     display: flex;
@@ -124,6 +119,7 @@ a.active {
     &__nav {
       display: none;
       &.is-open {
+        overflow: hidden;
         max-width: 100%;
         max-height: 100%;
         transform: scale(1);
@@ -199,8 +195,12 @@ a.active {
             letter-spacing: 0.02em;
             color: #2196f3;
             text-decoration: none;
+            display: flex;
             & span {
               padding-left: 10px;
+              color: #afb1b8;
+              transform: scale(0.5, 1.5);
+              display: inline-block;
             }
           }
         }
