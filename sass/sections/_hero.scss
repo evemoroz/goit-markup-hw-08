@@ -29,3 +29,12 @@
   width: inherit;
   margin: auto;
 }
+
+@media screen and (max-widh: 480px) {
+  .hero-section {
+    background-image: image-set(
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/header.jpg")
+    );
+  }
+}
