@@ -48,12 +48,13 @@
       &.is-open {
         overflow: hidden;
         max-width: 100%;
-        height: 100%;
+        height: 796px;
         transform: scale(1);
         transition-duration: 250ms;
         transition-timing-function: linear;
         margin: auto;
-        z-index: 1;
+        z-index: 999;
+        position: fixed;
         .header-text__nav.is-hidden {
           transform: scale(0);
           background-color: var(--white);
@@ -73,6 +74,7 @@
           display: flex;
           flex-direction: column;
           gap: 32px;
+          margin-bottom: 306px;
           &-item {
             max-width: 100%;
           }
@@ -81,7 +83,9 @@
           display: flex;
           flex-direction: column-reverse;
           align-items: flex-start;
-          margin-left: 40px;
+          padding-left: 40px;
+          margin: 0;
+          gap: 32px;
         }
         .header-contacts {
           justify-content: flex-start;
@@ -117,7 +121,9 @@
           padding-bottom: 48px;
           padding-top: 64px;
           padding-inline-start: 0;
-          margin-left: 40px;
+          padding-left: 40px;
+          padding-right: 48px;
+          margin: 0;
           &__items a {
             font-family: "Roboto";
             font-style: normal;
